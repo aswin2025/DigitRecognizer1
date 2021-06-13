@@ -119,9 +119,9 @@ def get_hyper_params():
     return hyper_params
 
 hyper_params = get_hyper_params()
-epochs = hyper_params["epochs"] if ("epochs" in hyper_params) else 10
-batch_size =  hyper_params["batch_size"] if ("batch_size" in hyper_params) else 200
-verbose = os.environ['verbose'] if os.getenv('verbose') else 2
+epochs = int(hyper_params["epochs"]) if ("epochs" in hyper_params) else 10
+batch_size =  int(hyper_params["batch_size"]) if ("batch_size" in hyper_params) else 200
+verbose = int(os.environ['verbose']) if os.getenv('verbose') else 2
 
 # 3.7 Train the Model
 
