@@ -110,6 +110,7 @@ model = baseline_model(num_pixels, num_classes)
 
 # 3.6 Read Hyper parameters and Environment variables
 import os
+import json
 def get_hyper_params():
     hyper_params = {}
     if (os.getenv('HYPERPARAM_PATH')):
