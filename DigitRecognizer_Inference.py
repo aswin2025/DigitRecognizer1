@@ -51,7 +51,7 @@ testInput_processed = testInput.reshape(1, nrPixels).astype('float32')
 
 pred = model.predict(testInput_processed)
 print ("Predicted image is ", pred.argmax())
-result = { "prediction" : pred.argmax() }
+result = { "prediction" : str(pred.argmax()) }
 
 if os.getenv('OUTPUT_PATH'):
     output_file=os.path.join(os.environ['OUTPUT_PATH'], 'result.json')
