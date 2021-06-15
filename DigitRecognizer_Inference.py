@@ -1,6 +1,16 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# 1. Install Dependencies
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+install("keras")
+install("tensorflow")
+
 import os
 import pandas as pd
 import pickle
