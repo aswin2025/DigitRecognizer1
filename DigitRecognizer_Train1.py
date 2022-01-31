@@ -5,8 +5,8 @@ import sys
 def install(package):
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
-install("keras")
-install("tensorflow")
+#install("keras")
+#install("tensorflow")
 
 # 2. Load MNIST Datasets of Digital hand writing
 from keras.datasets import mnist
