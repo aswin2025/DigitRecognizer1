@@ -7,7 +7,7 @@ def install(package):
 
 install("keras")
 #install("tensorflow")
-
+pip install tensorflow
 # 2. Load MNIST Datasets of Digital hand writing
 from keras.datasets import mnist
 import matplotlib.pyplot as plt
